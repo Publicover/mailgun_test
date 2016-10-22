@@ -3,9 +3,6 @@ source 'https://rubygems.org'
 ruby '2.3.1'
 
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
-group :production do
-  gem 'pg'
-end
 gem 'rails_12factor', group: :production
 gem 'puma'
 gem 'sass-rails', '~> 5.0'
@@ -23,9 +20,14 @@ gem 'coffee-rails', '~> 4.2'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+group :production do
+  gem 'pg'
+end
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  gem 'sqlite3'
 end
 
 group :development do
