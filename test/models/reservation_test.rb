@@ -1,7 +1,9 @@
 require 'test_helper'
 
 class ReservationTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+
+  test "Reservation should exist" do
+    assert Reservation
+  end
+  
 end
