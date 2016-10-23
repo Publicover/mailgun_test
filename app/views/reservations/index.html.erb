@@ -2,25 +2,27 @@
 
 <h1>ALL RESERVATIONS</h1>
 <br>
-<table>
-  <tr>
-    <th>First Name</th>
-    <th>Last Name</th>
-  </tr>
-
-  <% @reservations.each do |reservation| %>
+<center>
+  <table>
     <tr>
-      <td><%= reservation.f_name %></td>
-      <td><%= reservation.l_name %></td>
-      <td><%= link_to 'SHOW', reservation_path(reservation) %></td>
-      <td><%= link_to 'EDIT', edit_reservation_path(reservation) %></td>
-      <td><%= link_to 'DESTROY', reservation_path(reservation),
-              method: :delete,
-              data: { confirm: 'OK, well, just be careful.' } %></td>
+      <th>First Name</th>
+      <th>Last Name</th>
     </tr>
-  </tr>
-<% end %>
-</table>
+
+    <% @reservations.each do |reservation| %>
+      <tr>
+        <td><%= reservation.f_name %></td>
+        <td><%= reservation.l_name %></td>
+        <td><%= link_to 'SHOW', reservation_path(reservation) %></td>
+        <td><%= link_to 'EDIT', edit_reservation_path(reservation) %></td>
+        <td><%= link_to 'DESTROY', reservation_path(reservation),
+                method: :delete,
+                data: { confirm: 'OK, well, just be careful.' } %></td>
+      </tr>
+    </tr>
+  <% end %>
+  </table>
+</center>
 
 <br>
 <p>
