@@ -2,6 +2,11 @@ class ReservationsController < ApplicationController
 
   def index
     @reservations = Reservation.all
+
+    respond_to do |format|
+      format.html
+      format.csv { send_data @reservations.to_csv }
+    end
   end
 
   def show
