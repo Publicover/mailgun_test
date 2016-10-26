@@ -1,0 +1,6 @@
+<h1>Write an email</h1>
+
+<%= form_tag reports_send_email_path do %>
+  <%= text_field_tag :address, nil, placeholder: "Email address" %>
+  <%= submit_tag %>
+<% end %>
