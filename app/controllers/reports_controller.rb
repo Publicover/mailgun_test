@@ -5,6 +5,6 @@ class ReportsController < ApplicationController
 
   def send_email
     #params[:address]
-    ReportMailer.view_single.deliver_now
+    ReportMailer.view_single(params[:address]).deliver_now
   end
 end

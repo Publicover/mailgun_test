@@ -5,10 +5,10 @@ class ReportMailer < ApplicationMailer
   #
   #   en.report_mailer.view_single.subject
   #
-  def view_single
+  def view_single(address)
     @greeting = "Hi"
 
-    mail to: "jameslpublicover@gmail.com", subject: "hold my beer!"
+    mail to: address, subject: "hold my beer!"
   end
 
   # Subject can be set in your I18n file at config/locales/en.yml
