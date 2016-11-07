@@ -9,6 +9,7 @@ class ReportMailer < ApplicationMailer
     @greeting = "Hi"
 
     mail to: address, subject: "hold my beer!"
+  #  attachment "public/JimPublicoverDevNC2016.pdf"
   end
 
   # Subject can be set in your I18n file at config/locales/en.yml
