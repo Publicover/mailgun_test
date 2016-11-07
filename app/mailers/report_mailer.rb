@@ -8,7 +8,9 @@ class ReportMailer < ApplicationMailer
   def view_single(address)
     @greeting = "Hi"
 
+    attachments['publicover_resume.pdf'] = File.read('public/JimPublicoverDevNC2016.pdf')
     mail to: address, subject: "hold my beer!"
+    # attachments['publicover_resume.pdf'] = File.read('public/JimPublicoverDevNC2016.pdf')
   #  attachment "public/JimPublicoverDevNC2016.pdf"
   end
 
