@@ -1,8 +1,22 @@
-<h1>Dashboards#index</h1>
-<p>Find me in app/views/dashboards/index.html.erb</p>
-<br>
-<%= link_to "GET AN EMAIL", reports_write_email_path %><br>
-<%= link_to "HOME INDEX", reservations_path %> <br>
-<br>
-<%= link_to "NEW RESERVATION", new_reservation_path %> <br>
-<%= link_to "FRONT PAGE DASHBOARD", root_path %>
+<div class="grid grid-pad">
+  
+
+  <!-- <div class="grid grid-pad">
+    Grid with outside gutters also
+  </div> -->
+
+  <div class="col-2-3">
+    <h1>Dashboards#index</h1>
+    <p>Find me in app/views/dashboards/index.html.erb</p>
+    <br>
+  </div>
+
+  <div class="col-1-3">
+    <%= link_to "GET AN EMAIL", reports_write_email_path %><br>
+    <%= link_to "HOME INDEX", reservations_path %> <br>
+    <br>
+    <%= link_to "NEW RESERVATION", new_reservation_path %> <br>
+    <%= link_to "FRONT PAGE DASHBOARD", root_path %>
+  </div>
+
+</div>
