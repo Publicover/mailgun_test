@@ -1,7 +1,5 @@
 # README
 
-See this app in action at fulltestsuite.herokuapp.com. It's a portfolio site that shows off what I can do with Ruby on Rails.
+See this app in action at fulltestsuite.herokuapp.com. 
 
-* make it responsive
-* CSV import and export
-* send reports by email via Railgun
+This portfolio app shows off a lot of Rails capabilities: it's mobile-first and responsive, it's deployed on heroku, user accounts are handled by the devise gem, it can import and export CSVs, and it works with MailGun to send confirmation emails.
